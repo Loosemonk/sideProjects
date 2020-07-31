@@ -27,27 +27,24 @@ public class IntervalFinder {
 		interval.put(11, "Major 7th");
 
 		String[] chromaticScale = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
-		System.out.println("Enter your low note. If the note is flat, provide it's harmonic equivalent in a sharp(#) please");
+		System.out.println(
+				"Enter your low note. If the note is flat, provide it's harmonic equivalent in a sharp(#) please");
 		Scanner userInput = new Scanner(System.in);
 		String lowNote = userInput.nextLine();
-		
-	
-			
-			
-			
+
 		for (int i = 0; i < chromaticScale.length; i++) {
-			if (lowNote.equals(chromaticScale[i])) {
+			if (lowNote.equalsIgnoreCase(chromaticScale[i])) {
 				lowNoteInt = i++;
 			}
-				
-			
+
 		}
-		
-		System.out.println("Enter your high note. If the note is flat, provide it's harmonic equivalent in a sharp(#) please");
+
+		System.out.println(
+				"Enter your high note. If the note is flat, provide it's harmonic equivalent in a sharp(#) please");
 		String highNote = userInput.nextLine();
 
 		for (int i = 0; i < chromaticScale.length; i++) {
-			if (highNote.equals(chromaticScale[i])) {
+			if (highNote.equalsIgnoreCase(chromaticScale[i])) {
 				highNoteInt = i++;
 			}
 		}
@@ -58,8 +55,10 @@ public class IntervalFinder {
 		} else if (lowNoteInt > highNoteInt) {
 			int scaleLow = (12 - lowNoteInt) + highNoteInt;
 			System.out.println(interval.get(scaleLow));
-		}else System.out.println("Octave"); {
-			
+		} else
+			System.out.println("Octave");
+		{
+
 		}
 	}
 }
