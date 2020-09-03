@@ -1,4 +1,4 @@
-# sideProjects
+# Interval Finder
 An interval is the relational difference between two musical notes.
 Understanding intervals can be a powerful instrument (pun intended) in building melodic compositions.
 
