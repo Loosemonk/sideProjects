@@ -1,7 +1,2 @@
 # sideProjects
-An interval is the relational difference between two musical notes.
-Understanding intervals can be a powerful instrument (pun intended) in building melodic compositions.
-
-Interval Finder will do exactly that, find your musical interval. 
-This application will take two notes (a lower note and a higher note), supplied by the user,
-and then deliver the interval. 
+These are my side projects. These are the ideas I'm building upon on my journey towards becoming a creative, passionate programmer. If you have any suggestions please feel free to reach me here. I'm excited to hear from anyone regarding anything coding! Have a good day. 
